@@ -1,6 +1,6 @@
 Revision history for Perl extension Kolab.
 
-0.01  Tue Nov  4 10:42:09 2003
-	- original version; created by h2xs 1.22 with options
+0.01  Tue Apr  6 10:22:49 2004
+	- original version; created by h2xs 1.23 with options
 		-XA -n Kolab
 

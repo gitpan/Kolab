@@ -1,7 +1,7 @@
 Changes
-Kolab.pm
 Makefile.PL
 MANIFEST
 README
-t/1.t
+t/Kolab.t
+lib/Kolab.pm
 META.yml                                 Module meta-data (added by MakeMaker)

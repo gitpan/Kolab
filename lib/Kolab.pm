@@ -53,7 +53,7 @@ our @EXPORT = qw(
     &KOLAB_DEBUG
 );
 
-our $VERSION = '0.9';
+our $VERSION = sprintf('%d.%02d', q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 sub KOLAB_SILENT()      { 0 }
 sub KOLAB_ERROR()       { 1 }
@@ -103,7 +103,7 @@ sub reloadConfig
     # Make sure the critical variables we need were defined in kolab.conf
     if (!exists $config{'bind_dn'} || !exists $config{'bind_pw'} || !exists $config{'ldap_uri'} || !exists $config{'base_dn'}) {
         &log('C', "One or more required configuration variables (`bind_dn', `bind_pw', `ldap_uri' and/or `base_dn') are missing in `kolab.conf'", KOLAB_ERROR);
-#        exit(1);
+        exit(1);
     }
 
     # Retrieve the LDAP values of the main kolab object to complete our config hash
